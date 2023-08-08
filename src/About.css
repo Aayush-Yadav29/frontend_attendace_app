@@ -1,0 +1,37 @@
+/* Apply a reset to ensure full screen coverage */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+.about-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(190, 186, 186); /* Greyish background for the rest of the page */
+}
+
+.about-heading {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+
+.about-content {
+  height: 50%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Black background for the content div */
+  border: 2px solid rgb(98, 97, 97); /* Light grey border around the content div */
+  border-radius: 20px; /* Border radius for the content div */
+  /* color: white; */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Add vertical scrolling if content overflows */
+}
