@@ -1,0 +1,26 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+  }
+  
+  .footer-link {
+    cursor: pointer;
+  }
+  
+  .footer-contact {
+    padding-right: 20%;
+    text-align: right;
+  }
+  
