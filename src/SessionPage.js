@@ -38,14 +38,15 @@ export default function SessionPage({ sessionlist }) {
                     CS330
                 </Typography>
             </div>
-
+            <div className="content" style={{ margin: 'auto', width: '920px', maxWidth: '90%' }}>
             {sessionlist.map(item => (
             <div style={parentStyle}>
                 <div style={childStyle}>{item.Session}</div>
                 <div style={childStyle}>{item.Time}</div>
-                <div style={childStyle}>{item.Remark}</div>
+                <div style={{ flex: 1, textAlign: 'center', color: item.Remark === 'P' ? 'green' : 'red' }}>{item.Remark}</div>
             </div>
             ))}
+            </div>
         </div>
     );
 }
